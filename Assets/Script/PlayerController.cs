@@ -7,6 +7,8 @@ public class PlayerController : MonoBehaviour
     public float speed = 10.0f;
     public float xRange = 10.0f;
     public float zRange = 15.0f;
+    public int score = 0;
+    public int life = 3;
 
 
     public GameObject projectilePrefab;
@@ -47,4 +49,12 @@ public class PlayerController : MonoBehaviour
             Instantiate(projectilePrefab, transform.position, projectilePrefab.transform.rotation);
         }
     }
+    void LoseHp()
+    {
+        this.life -= 1;
+        Debug.Log("zostało ci " + this.life + " żyć");
+    }
+    void GetScore()
+
 }
+
