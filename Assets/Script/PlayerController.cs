@@ -49,12 +49,16 @@ public class PlayerController : MonoBehaviour
             Instantiate(projectilePrefab, transform.position, projectilePrefab.transform.rotation);
         }
     }
-    void LoseHp()
+    public void LoseHp()
     {
         this.life -= 1;
         Debug.Log("zostało ci " + this.life + " żyć");
     }
-    void GetScore()
+    public void GetScore()
+    {
+        this.score += 1;
+        Debug.Log($"twój wynik to: {this.score}");
+    }
 
 }
 
