@@ -11,6 +11,7 @@ public class SpawnManager : MonoBehaviour
     private float spawnPosX = 20;
     private float startDelay = 2;
     private float spawnInterval = 1.5f;
+    Slider slider;
 
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     void Start()
@@ -50,5 +51,7 @@ public class SpawnManager : MonoBehaviour
 
         int animalIndex = Random.Range(0, animalPrefabs.Length); //losowanie rodzaju zwierzaka
         Instantiate(animalPrefabs[animalIndex], spawnPos, spawnRotation);
+
+
     }
 }
