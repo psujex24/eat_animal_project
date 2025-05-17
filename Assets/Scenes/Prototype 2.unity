@@ -829,10 +829,6 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 0}
     m_Modifications:
-    - target: {fileID: 3343357078610607979, guid: f571d94832f87dd41867beec3b899e34, type: 3}
-      propertyPath: speed
-      value: 3
-      objectReference: {fileID: 0}
     - target: {fileID: 4983942035443992635, guid: f571d94832f87dd41867beec3b899e34, type: 3}
       propertyPath: m_LocalPosition.x
       value: -8.32
@@ -885,6 +881,10 @@ PrefabInstance:
       propertyPath: m_AnchorMax.y
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 8443377607983737897, guid: f571d94832f87dd41867beec3b899e34, type: 3}
+      propertyPath: playerController
+      value: 
+      objectReference: {fileID: 926850303}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -984,10 +984,6 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 0}
     m_Modifications:
-    - target: {fileID: 540375942111230932, guid: bb8f573e31af81e479807ba3ffe05474, type: 3}
-      propertyPath: m_AnchorMax.y
-      value: 0
-      objectReference: {fileID: 0}
     - target: {fileID: 3005577088828966005, guid: bb8f573e31af81e479807ba3ffe05474, type: 3}
       propertyPath: m_LocalPosition.x
       value: -0.65
@@ -1028,14 +1024,22 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 3703669563665142180, guid: bb8f573e31af81e479807ba3ffe05474, type: 3}
+      propertyPath: m_AnchorMax.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3703669563665142180, guid: bb8f573e31af81e479807ba3ffe05474, type: 3}
+      propertyPath: m_AnchorMax.y
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 5683085021033758400, guid: bb8f573e31af81e479807ba3ffe05474, type: 3}
       propertyPath: m_Name
       value: Animal_Fox_02
       objectReference: {fileID: 0}
-    - target: {fileID: 7126955337272568870, guid: bb8f573e31af81e479807ba3ffe05474, type: 3}
-      propertyPath: m_AnchorMax.y
-      value: 0
-      objectReference: {fileID: 0}
+    - target: {fileID: 7034264664681471335, guid: bb8f573e31af81e479807ba3ffe05474, type: 3}
+      propertyPath: playerController
+      value: 
+      objectReference: {fileID: 926850303}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -1053,14 +1057,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Animal_Stag_02
       objectReference: {fileID: 0}
-    - target: {fileID: 5404187431814866997, guid: 7f8d0182933284d41a6a11adb4763564, type: 3}
-      propertyPath: m_AnchorMax.y
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 6244651387510042062, guid: 7f8d0182933284d41a6a11adb4763564, type: 3}
-      propertyPath: m_AnchorMax.y
-      value: 0
-      objectReference: {fileID: 0}
+    - target: {fileID: 2458313451721925751, guid: 7f8d0182933284d41a6a11adb4763564, type: 3}
+      propertyPath: playerController
+      value: 
+      objectReference: {fileID: 926850303}
     - target: {fileID: 6953637096302136509, guid: 7f8d0182933284d41a6a11adb4763564, type: 3}
       propertyPath: m_LocalPosition.x
       value: 7.8491116
@@ -1099,6 +1099,14 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 6953637096302136509, guid: 7f8d0182933284d41a6a11adb4763564, type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8496554403180041151, guid: 7f8d0182933284d41a6a11adb4763564, type: 3}
+      propertyPath: m_AnchorMax.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8496554403180041151, guid: 7f8d0182933284d41a6a11adb4763564, type: 3}
+      propertyPath: m_AnchorMax.y
       value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents: []
