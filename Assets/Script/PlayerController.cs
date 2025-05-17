@@ -53,6 +53,11 @@ public class PlayerController : MonoBehaviour
     {
         this.life -= 1;
         Debug.Log("zostało ci " + this.life + " żyć");
+        if (this.life < 0)
+        {
+            speed = 0;
+            Debug.Log("Game Over");
+        }
     }
     public void GetScore()
     {

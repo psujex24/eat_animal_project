@@ -1,17 +1,19 @@
+using UnityEditor.Animations;
 using UnityEngine;
 
 public class DetectCollisions : MonoBehaviour
 {
     public PlayerController playerController;
+    public int maxHealth = 3;
+    public int currentHealth;
+
+    public HPBar healthbar;
 
     // Start is called once before the first execution of Update after the MonoBehaviour is 
     void Start()
     {
-        playerController = FindObjectOfType<PlayerController>();
-        if (playerController == null)
-        {
-            Debug.LogError("Nie znaleniono gracza");
-        }
+        currentHealth = maxHealth;
+        healthbar.SetMaxHealth(maxHealth);
     }
     void OnTriggerEnter(Collider other)
     {
@@ -19,28 +21,36 @@ public class DetectCollisions : MonoBehaviour
 
         if (other.CompareTag("Food"))
         {
-            Debug.Log("Kolizja z jedzeniem niszczę oba");
-            Destroy(gameObject);             // Zniszcz zwierzę
+            TakeDamage(1);          // Zniszcz zwierzę
             Destroy(other.gameObject);      // Zniszcz jedzenie
-            playerController.GetScore();
-            Debug.Log($"twój wynik to: {playerController.score}");
+
         }
         else if (other.CompareTag("Animal_1"))
         {
             // NIC nie rób: ani zwierzę, ani gracz nie są niszczeni
-            Debug.Log("Kolizja z graczem lub innym zwierzęciem brak działania");
         }
         else if (other.CompareTag("Player"))
         {
-            Debug.Log("Kolizja z graczem");
             playerController.LoseHp();
             Debug.Log($"zostało ci: {playerController.life} żyć");
         }
         else
         {
             // Jeśli kolizja z czymś innym (np. ścianą), zniszcz zwierzę
-            Debug.Log("Kolizja z czymś innym niszczę zwierzę");
             Destroy(gameObject);
+        }
+    }
+    void TakeDamage(int damage)
+    {
+        currentHealth -= damage;
+        healthbar.SetHealth(currentHealth);
+
+        if (currentHealth <= 0)
+        {
+            Destroy(gameObject);
+            playerController.GetScore();
+            Debug.Log($"twój wynik to: {playerController.score}");
+
         }
     }
 }
