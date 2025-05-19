@@ -406,7 +406,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b0100fccbea3d7a4288d2e6456c30b65, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  playerController: {fileID: 0}
+  playerController: {fileID: 2944379525679972532, guid: 6a46e84e01aa43a47b5514a4a7ce57b6, type: 3}
   maxHealth: 3
   currentHealth: 0
   healthbar: {fileID: 6769764920618552709}
