@@ -19,3 +19,6 @@ Ta gra nie będzie dalej rozwijana – zostaje w takiej formie, w jakiej jest. J
 
 👤 **Autor**<br>
 Projekt stworzony przez **psujex24** jako część kursu Unity.
+
+
+https://play.unity.com/en/games/19f116d0-6a07-4ca8-b1f9-03d7c70840c9/webgl-builds
