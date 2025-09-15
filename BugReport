@@ -1,0 +1,34 @@
+tytuł: Postać nie reaguje na sterowanie po kompizacji z Unity na WebGL
+
+Typ Zadania: Bug
+
+Opis:
+Po skompilowaniu aplikacji Unity na WebGL postać w grze nie raguje na żadne sterowanie (klawisze WSAD/strzałki).
+Problem występuje na przeglądarkach na chromium(brave)
+
+środowisko testowe:
+unity: (tba)
+Build Target: WebGL
+Przeglądarki: chromium(brave)
+OS: win 11
+
+Kroki do reprodukcji:
+1. Otworzyć aplikacje w przeglądarce za pomocą linku w "README.TXT"
+2. Spróbować poruszać postacią za omocą klawiszy WASD lub strzałek.
+3. Obserwować działanie postaci
+
+Oczekiwany rezultat:
+Postać reaguje na sterowanie i porusza się po planszy.
+
+Rzeczywisty rezultat:
+Postać nie reaguje na sterowanie.
+
+Załączniki: 
+Screenshot: (TBA)
+Link: W pliku "README.TXT"
+
+Priorytet: 
+High
+
+
+
