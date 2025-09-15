@@ -7,6 +7,7 @@ Po skompilowaniu aplikacji Unity na WebGL postać w grze nie raguje na żadne st
 Problem występuje na przeglądarkach na chromium(brave)
 
 środowisko testowe:
+Wersja: 0.1
 unity: (tba)
 Build Target: WebGL
 Przeglądarki: chromium(brave)
